@@ -4,7 +4,7 @@ Donate link: http://umuthan.com/
 Tags: flamingo, contact form 7, shortcode
 Requires at least: 4.0
 Tested up to: 5.3
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Requires PHP: 5.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -27,7 +27,7 @@ Wordpress plugin for list messages from Flamingo (Contact Form 7) on pages or po
 **form**: which formid to display (default: all)
 **head**: table header (default: no) Sample: 'Name,Surname'
 **fields**: which fields to display (default: all) Sample: 'your-name,your-surname'
-**condition**: do you have any condition about fields (default: no) Sample:'your-name:=:A'
+**condition**: do you have any condition about fields (default: no) Sample:'your-name:=:A;your-surname:=:B'
 **order**: messages order (default: desc)
 **orderby**: messages order by (default: date)
 
@@ -53,7 +53,13 @@ You must install Contact Form 7 and Flamingo to use this plugin.
 = 1.0.0 =
 * shortcode defined
 
+= 1.1.0 =
+* condition attribute can be more than one condition
+
 == Upgrade Notice ==
 
 = 1.0.0 =
 Shortcode defined
+
+= 1.1.0 =
+* Condition attribute can be more than one condition

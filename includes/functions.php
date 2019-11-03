@@ -44,15 +44,18 @@ function flamingo_shortcode_get_inbound_messages($number, $form, $head, $fields,
 
   if($condition!='no') {
 
-    $condition = explode(':', $condition);
+    $condition_query = array();
 
-    $condition_query = array(
-        array(
-            'key'     => '_field_'.$condition[0],
-            'value'   => $condition[2],
-            'compare' => $condition[1],
-        )
-    );
+    $conditions = explode(';', $condition);
+    foreach ($conditions as $condition) {
+      $condition = explode(':', $condition);
+
+      $condition_query[] = array(
+        'key'     => '_field_'.$condition[0],
+        'value'   => $condition[2],
+        'compare' => $condition[1],
+      );
+    }
 
   }
 
