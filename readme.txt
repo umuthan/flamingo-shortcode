@@ -3,7 +3,7 @@ Contributors: umuthan
 Donate link: http://umuthan.com/
 Tags: flamingo, contact form 7, shortcode
 Requires at least: 4.0
-Tested up to: 5.3
+Tested up to: 5.4
 Stable tag: 1.1.0
 Requires PHP: 5.0
 License: GPLv3
