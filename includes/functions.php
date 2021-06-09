@@ -88,11 +88,19 @@ function flamingo_shortcode_get_inbound_messages($number, $form, $head, $fields,
       $formfields = get_post_meta($message->ID);
     	foreach($formfields as $meta_key=>$meta_value) {
         if(stristr($meta_key, '_field_') !== FALSE) {
+          $meta_key_value = get_post_meta( $message->ID, $meta_key, true );
+    			if(is_array($meta_key_value)) {
+    				$meta_key_value = implode(",",$meta_key_value);
+    			}
           if($fields=='all') {
-            $output .= '<td>' . $meta_value[0] . '</td>';
+            $output .= '<td>';
+    				$output .= $meta_key_value;
+    				$output .= '</td>';
           } else {
             if(in_array($meta_key, $selectedFields)) {
-              $output .= '<td>' . $meta_value[0] . '</td>';
+              $output .= '<td>';
+              $output .= $meta_key_value;
+					    $output .= '</td>';
             }
           }
         }

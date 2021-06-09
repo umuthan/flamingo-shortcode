@@ -3,8 +3,8 @@ Contributors: umuthan
 Donate link: http://umuthan.com/
 Tags: flamingo, contact form 7, shortcode
 Requires at least: 4.0
-Tested up to: 5.4
-Stable tag: 1.1.0
+Tested up to: 5.7.2
+Stable tag: 1.1.2
 Requires PHP: 5.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -50,16 +50,28 @@ You must install Contact Form 7 and Flamingo to use this plugin.
 
 == Changelog ==
 
-= 1.0.0 =
-* shortcode defined
+= 1.1.2 =
+* fixed the error about showing the values that are coming from selectbox
+
+= 1.1.1 =
+* plugin tests on Wordpress 5.7.2
 
 = 1.1.0 =
 * condition attribute can be more than one condition
 
+= 1.0.0 =
+* shortcode defined
+
 == Upgrade Notice ==
 
-= 1.0.0 =
-Shortcode defined
+= 1.1.2 =
+* fixed the error about showing the values that are coming from selectbox
+
+= 1.1.1 =
+* Done some plugin tests on Wordpress 5.7.2
 
 = 1.1.0 =
 * Condition attribute can be more than one condition
+
+= 1.0.0 =
+* Shortcode defined
